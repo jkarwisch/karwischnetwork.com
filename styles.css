@@ -47,3 +47,28 @@ footer > p { font-size: 13px; }
 .legal { max-width: 1000px; font-size: 11px; color: #6f8494; }
 @media (max-width: 850px) { nav a:not(.navcta) { display: none; } .cards { grid-template-columns: 1fr 1fr; } .band, .about { grid-template-columns: 1fr; gap: 30px; } .timeline { grid-template-columns: 1fr; } .actions { flex-wrap: wrap; } }
 @media (max-width: 540px) { .cards { grid-template-columns: 1fr; } .hero h1 { font-size: 42px; } .section, .band, .contact { padding: 70px 24px; } .hero { padding: 80px 24px; } }
+
+/* Selected project experience */
+[id] { scroll-margin-top: 100px; }
+.project-card { max-width: 900px; margin-top: 36px; padding: 36px; background: #fff; border: 1px solid #ccd7df; border-top: 3px solid #16899a; }
+.project-meta { font-size: 12px; letter-spacing: .08em; color: #2a7180; font-weight: 750; }
+.project-card h3 { font-size: clamp(25px, 3vw, 34px); line-height: 1.2; margin: 18px 0; }
+.project-card p { color: #536675; max-width: 760px; }
+.project-card .project-result { color: #1c3546; font-weight: 750; }
+.case-hero { padding: 60px max(8vw, 32px) 70px; background: #0a1825; }
+.back-link { display: inline-block; margin-bottom: 38px; color: #9eb3c2; }
+.case-hero h1 { font-size: clamp(36px, 5vw, 62px); line-height: 1.1; max-width: 1000px; margin: 20px 0; }
+.project-facts { max-width: 900px; margin-top: 36px; }
+.project-facts div { padding: 14px 0; border-top: 1px solid #21384b; }
+.project-facts dt { font-size: 12px; font-weight: 800; color: #56d7e7; text-transform: uppercase; letter-spacing: .08em; }
+.project-facts dd { margin: 4px 0 0; color: #bdcbd5; }
+.case-content > section, .project-disclaimer { max-width: 850px; margin-left: auto; margin-right: auto; }
+.case-content > section + section { margin-top: 55px; }
+.case-content h2 { font-size: clamp(28px, 3vw, 38px); }
+.case-content h3 { margin: 28px 0 8px; font-size: 21px; }
+.case-content p, .case-content li { color: #536675; }
+.case-content li { margin-bottom: 12px; }
+.project-disclaimer { margin-top: 50px; border-top: 1px solid #ccd7df; padding-top: 24px; font-size: 13px; }
+a:focus-visible { outline: 3px solid #16899a; outline-offset: 5px; }
+@media (min-width: 851px) and (max-width: 1150px) { nav { gap: 14px; } nav a { font-size: 12px; } .brand { font-size: 11px; } }
+@media (max-width: 540px) { .project-card { padding: 24px; } .case-hero { padding: 40px 24px 55px; } header .brand { font-size: 10px; gap: 8px; } header .navcta { font-size: 12px; } }
